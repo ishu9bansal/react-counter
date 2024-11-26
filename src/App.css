@@ -36,13 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-#counter {
-  font-size: 2em;
-  margin: 20px;
-}
-
-.button {
-  padding: 10px 20px;
-  margin: 5px;
-}
