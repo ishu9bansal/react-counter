@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Counter.css';
 
-function Counter() {
+function Counter({ name }) {
   const [count, setCount] = useState(0);
 
   const increment = () => setCount(count + 1);
@@ -9,6 +9,7 @@ function Counter() {
 
   return (
     <div>
+        <div id="name">{name}</div>
         <div id="counter">{count}</div>
         <button onClick={increment}>Increment</button>
         <button onClick={reset}>Reset</button>
