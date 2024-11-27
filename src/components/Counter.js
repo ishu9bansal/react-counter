@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Counter.css';
 
 function Counter({ name }) {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log("Counter created ", name);
+
+    return () => console.log("Counter destroyed", name);
+  }, []);
 
   const increment = () => setCount(count + 1);
   const reset = () => setCount(0);
